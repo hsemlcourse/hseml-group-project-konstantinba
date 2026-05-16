@@ -1,6 +1,7 @@
 # =============================================================================
 # Python
 # =============================================================================
+__init__.py
 __pycache__/
 *.py[cod]
 *$py.class
@@ -13,6 +14,7 @@ build/
 .Python
 pip-log.txt
 pip-delete-this-directory.txt
+
 
 # =============================================================================
 # Virtual environments
@@ -70,6 +72,10 @@ reports/figures/*.jpg
 reports/figures/*.svg
 reports/figures/*.pdf
 !reports/figures/.gitkeep
+report/images/*.png
+report/images/*.jpg
+report/images/*.svg
+report/images/*.pdf
 # ablation_table.csv must be committed — do NOT add it here
 
 # =============================================================================

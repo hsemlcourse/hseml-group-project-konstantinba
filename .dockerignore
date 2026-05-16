@@ -1,0 +1,34 @@
+# Виртуальное окружение — не нужно в образе, pip сам установит зависимости
+venv/
+.venv/
+ENV/
+
+# Python байткод
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Git
+.git/
+.gitignore
+
+# Кэш инструментов
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+.coverage
+htmlcov/
+
+# Временные ноутбуки и прочий мусор
+temp_notebooks/
+=4.0.0
+
+# Сохранённые модели (большие бинарники — монтируются через volume)
+models/*.pkl
+models/*.joblib
+
+# IDE
+.idea/
+.vscode/
+*.swp
