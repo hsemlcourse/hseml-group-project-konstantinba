@@ -46,9 +46,7 @@ _TOPIC_FEATURES_RAW: list[str] = [
 ]
 
 # Переименованные тематические столбцы (без спецсимволов)
-TOPIC_FEATURES: list[str] = [
-    re.sub(r"[ /]+", "_", col) for col in _TOPIC_FEATURES_RAW
-]
+TOPIC_FEATURES: list[str] = [re.sub(r"[ /]+", "_", col) for col in _TOPIC_FEATURES_RAW]
 
 # Текстовые признаки, извлекаемые из lyrics.
 # Примечание: stretched_words_ratio оказался нулевым на всём датасете —
@@ -277,8 +275,8 @@ def split_data(
         f"(всего: {len(df)})"
     )
     print(
-        f"Доли: train={len(train)/len(df):.1%}, "
-        f"val={len(val)/len(df):.1%}, "
-        f"test={len(test)/len(df):.1%}"
+        f"Доли: train={len(train) / len(df):.1%}, "
+        f"val={len(val) / len(df):.1%}, "
+        f"test={len(test) / len(df):.1%}"
     )
     return train, val, test
